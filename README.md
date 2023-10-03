@@ -1,6 +1,6 @@
 # Linux-Catppuccin-Theme
 
-![]("./docs/screenshot.png")
+![img](https://github.com/devcui/Linux-Catppuccin-Theme/blob/main/docs/screenshot.png)
 
 
 # Original author
