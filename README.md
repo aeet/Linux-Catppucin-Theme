@@ -112,6 +112,36 @@ curl ${url} -s -o ~/.cache/weather.json
 exit
 ```
 
+# 10. Building and installing the glava
+
+```bash
+sudo apt-get install libgl1-mesa-dev libpulse0 libpulse-dev libxext6 libxext-dev libxrender-dev libxcomposite-dev liblua5.3-dev lua-lgi lua-filesystem libobs0 libobs-dev meson build-essential gcc git
+sudo ldconfig
+git clone https://gitlab.com/wild-turtles-publicly-release/glava/glava.git
+cd glava
+meson build --prefix /usr
+ninjia -C build
+sudo ninjia -C build install
+glava --copy-config
+cd ..
+rsync -av glava-config/.config ~/
+```
+
+# 11. Installing terminal theme
+
+```bash
+curl -L https://raw.githubusercontent.com/catppuccin/gnome-terminal/v0.2.0/install.py | python3 -
+```
+- you can set terminal's theme and font now
+
+# 12. Installing plank dock
+
+```bash
+sudo apt-get install plank
+rsync -av plank-theme-config/.config ~/
+rsync -av plank-theme-config/.local ~/
+```
+
 
 # Original author
 
