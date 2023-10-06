@@ -120,8 +120,8 @@ sudo ldconfig
 git clone https://gitlab.com/wild-turtles-publicly-release/glava/glava.git
 cd glava
 meson build --prefix /usr
-ninjia -C build
-sudo ninjia -C build install
+ninja -C build
+sudo ninja -C build install
 glava --copy-config
 cd ..
 rsync -av glava-config/.config ~/
